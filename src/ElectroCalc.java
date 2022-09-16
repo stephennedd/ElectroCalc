@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 public class ElectroCalc {
 
     // this is a little program that calculates the price you pay when splitting an electric bill using JOptionPanes as a GUI
-    // it takes the total bill and the usage in kilowatt and calculates the price you person pays
+    // it takes the total bill and the usage in kilowatt and calculates the price you pay based on the usage
     public static void main(String[] args) {
 
         String currency = "AWG ";
