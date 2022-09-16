@@ -19,6 +19,7 @@ public class Main {
             double totalMeterKwh = Double.parseDouble(JOptionPane.showInputDialog("Enter the total meter reading in kWh: "));
             double myPercentage = (myMeterInKwh / totalMeterKwh) * 100;
 
+            // create decimal format to show only 2 decimals
             DecimalFormat df = new DecimalFormat("#.##");
             double myBill = (billTotalInFlorin / 100) * myPercentage;
 
