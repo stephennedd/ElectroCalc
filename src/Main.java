@@ -3,8 +3,8 @@ import java.text.DecimalFormat;
 
 public class Main {
 
-    // this is a little program that calculates the price you pay when splitting an electric bill
-    // it takes the total bill and the usage in kilowatt and calculates the price each person pays
+    // this is a little program that calculates the price you pay when splitting an electric bill in a java swing GUI
+    // it takes the total bill and the usage in kilowatt and calculates the price you person pays
     public static void main(String[] args) {
 
         // create boolean to check if user wants to continue
@@ -14,7 +14,7 @@ public class Main {
         while (running) {
 
             // create scanner to get user input and show in window
-            double billTotalInFlorin = Double.parseDouble(JOptionPane.showInputDialog("Enter the total bill in florin: "));
+            double billTotalInFlorin = Double.parseDouble(JOptionPane.showInputDialog("Enter the total bill in your currency: "));
             double myMeterInKwh = Double.parseDouble(JOptionPane.showInputDialog("Enter your usage in kWh: "));
             double totalMeterKwh = Double.parseDouble(JOptionPane.showInputDialog("Enter the total meter reading in kWh: "));
             double myPercentage = (myMeterInKwh / totalMeterKwh) * 100;
