@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.text.DecimalFormat;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ElectroCalc {
 
@@ -10,10 +9,10 @@ public class ElectroCalc {
 
         String currency = "AWG ";
         // create boolean to check if user wants to continue
-        AtomicBoolean running = new AtomicBoolean(true);
+        boolean running = true;
 
         // loop to keep program running
-        while (running.get()) {
+        while (running) {
 
             //create scanner to get user input and show in window
             double billTotalInFlorin = Double.parseDouble(JOptionPane.showInputDialog( "Enter the total bill in " + currency + ": "));
@@ -31,7 +30,7 @@ public class ElectroCalc {
             // ask user if they want to calculate again
             int answer = JOptionPane.showConfirmDialog(null, "Do you want to calculate another bill?");
             if (answer == JOptionPane.NO_OPTION) {
-                running.set(false);
+                running = false;
             }
         }
     }
