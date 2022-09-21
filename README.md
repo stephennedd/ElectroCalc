@@ -22,8 +22,8 @@
 
 # ------------------------ElectroCalc-----------------------
 
-<img alt="screenshot of application" src="src/images/img.png" >![img.png](img.png)
-<img alt="screenshot of application2" src="src/images/expect.png" >![expect.png](img.png)
+<img alt="screenshot of application" src="src/images/img.png" >
+<img alt="screenshot of application2" src="src/images/expect.png" >
 
 
 
