@@ -25,7 +25,7 @@ public class ElectroCalc {
             double myBill = (billTotalInFlorin / 100) * myPercentage;
 
             // show the result
-            JOptionPane.showMessageDialog(null, "Your percentage is: " + df.format(myPercentage) + "%\n" + "Your bill is: " + df.format(myBill) + " " + "€");
+            JOptionPane.showMessageDialog(null, "Your percentage is: " + df.format(myPercentage) + "%\n" + "You pay: " + df.format(myBill) + " " + "€"  + "%\n" + "The remaining amount is: " + df.format(billTotalInFlorin - myBill) + " " + "€");
 
             // ask user if they want to calculate again
             int answer = JOptionPane.showConfirmDialog(null, "Do you want to calculate another bill?");
